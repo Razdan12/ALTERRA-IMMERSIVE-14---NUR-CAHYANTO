@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('./assets/img/charles-rRWiVQzLm7k-unsplash.jpg');
+      background-size: cover;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body class="vh-100 bg-primary">
+  <div class="row bg-danger">
+    <div class="col-md-5 bg-dark text-white">
+      <div class="overlay"></div>
+      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <img src="./assets/img/logo-ALTA.png" alt="Logo" class="img-fluid mb-4">
+        <h2>Welcome Back!</h2>
+        <p class="lead">Please login to your account.</p>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-md-8">
+          <h3>Login</h3>
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="remember-me">
+              <label class="form-check-label" for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
