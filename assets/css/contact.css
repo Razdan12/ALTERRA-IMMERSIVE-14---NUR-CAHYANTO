@@ -1,10 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+}
 .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 991;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #19345ead; /* Warna hitam dengan opacity 50% */
+}
+
+.overlay img{
+  margin: 50% 30%;
+  
+}
+
+.container-form{
+ height: 100vh;
+ color: #19345E;
+}
+.form-box{
+  margin: 0 auto;
+  margin-top: 80px;
+}
+input, select{
+  height: 60px;
+}
+
+.button{
+	background-color: rgb(255, 94, 0);
+	width: 150px;
+	height: 50px;
+	border-radius: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+.button:hover{
+	background-color: rgba(255, 94, 0, 0.795);
+	
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .right{
+    display: none;
   }
-  .containerr{
-    position: relative;
-  }
+  
+.container-form{
+  height: 100vh;
+  padding: 30px;
+  color: #19345E;
+ }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container-form{
+    height: 100vh;
+    padding: 30px;
+    color: #19345E;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .container-form{
+    height: 100vh;
+    padding: 10px;
+    color: #19345E;
+   }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

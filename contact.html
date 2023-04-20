@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-image: url('./assets/img/charles-rRWiVQzLm7k-unsplash.jpg');
-      background-size: cover;
-      opacity: 0.7;
-    }
-  </style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact</title>
+
+
+  <link href="./assets/css/contact.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
-<body class="vh-100 bg-primary">
-  <div class="row bg-danger">
-    <div class="col-md-5 bg-dark text-white">
-      <div class="overlay"></div>
-      <div class="d-flex flex-column align-items-center justify-content-center h-100">
-        <img src="./assets/img/logo-ALTA.png" alt="Logo" class="img-fluid mb-4">
-        <h2>Welcome Back!</h2>
-        <p class="lead">Please login to your account.</p>
-      </div>
-    </div>
-    <div class="col-md-7">
-      <div class="row h-100 align-items-center justify-content-center">
-        <div class="col-md-8">
-          <h3>Login</h3>
-          <form>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="remember-me">
-              <label class="form-check-label" for="remember-me">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-          </form>
+
+<body>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 right">
+      <div class="position-relative">
+        <img class="img-fluid" src="./assets/img/charles-rRWiVQzLm7k-unsplash.jpg" alt="">
+
+        <div class="overlay">
+          <img src="./assets/img/logo-ALTA-v2.png" alt="" class="img-fluid">
+
         </div>
       </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+      <div class="container-form">
+        <div class="col-md-8 form-box">
+          <h3 class="mb-3">Contact Us</h3>
+          <form>
+            <div class="form-group mb-4">
+              <label for="name">Full Name</label>
+              <input type="name" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group mb-4">
+              <label for="phone">Phone Number</label>
+              <input type="phone" class="form-control" placeholder="08726372371">
+            </div>
+            <div class="form-group mb-4">
+              <label for="phone">Role</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selected</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group mb-4">
+              <label for="phone">Mesage</label>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Mesage</label>
+              </div>
+            </div>
+            <a href="#" class="button"> Submit</a>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
+</body>
+
 </html>
